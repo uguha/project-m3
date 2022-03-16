@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют онлайн</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <ul class="menu">
+                <li class="menu__item"><a href="#" class="active">БАНК</a></li>
+                <li class="menu__item"><a href="#">БИЗНЕС</a></li>
+                <li class="menu__item"><a href="#">ИНВЕСТИЦИИ</a></li>
+                <li class="menu__item"><a href="#">СТРАХОВАНИЕ</a></li>
+                <li class="menu__item"><a href="#">МОБАЙЛ</a></li>
+                <li class="menu__item"><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li class="menu__item"><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+            </ul>
+            <button class="btn login">ВОЙТИ</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Конвертер валют онлайн</h1>
+            <div class="fields">
+                <div class="field">
+                    <form>
+                        <p class="field-name">У меня есть</p>
+                        <div class="form-radio-group">
+                            <div class="form-radio-group__item">
+                                <input id="radio-rub" type="radio" name="radioLeft" value="rub" checked="checked">
+                                <label for="radio-rub">RUB</label>
+                            </div>
+                            <div class="form-radio-group__item">
+                                <input id="radio-usd" type="radio" name="radioLeft" value="usd">
+                                <label for="radio-usd">USD</label>
+                            </div>
+                            <div class="form-radio-group__item">
+                                <input id="radio-eur" type="radio" name="radioLeft" value="eur">
+                                <label for="radio-eur">EUR</label>
+                            </div>
+                            <div class="form-radio-group__item">
+                                <input id="radio-gbp" type="radio" name="radioLeft" value="gbp">
+                                <label for="radio-gbp">GBP</label>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <input type="text" class="input" id="leftInput" value="1">
+                            <p class="exchange-rates">1 <span id="baseLeftCurrency">RUB</span> = <span id="resLeft">0.0135</span> <span id="symbolLeftCurrency">USD</span></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="field">
+                    <form>
+                        <p class="field-name">Хочу приобрести</p>
+                        <div class="form-radio-group">
+                            <div class="form-radio-group__item">
+                                <input id="radio-rub-converse" type="radio" name="radioRight" value="rub">
+                                <label for="radio-rub-converse">RUB</label>
+                            </div>
+                            <div class="form-radio-group__item">
+                                <input id="radio-usd-converse" type="radio" name="radioRight" value="usd" checked="checked">
+                                <label for="radio-usd-converse">USD</label>
+                            </div>
+                            <div class="form-radio-group__item">
+                                <input id="radio-eur-converse" type="radio" name="radioRight" value="eur">
+                                <label for="radio-eur-converse">EUR</label>
+                            </div>
+                            <div class="form-radio-group__item">
+                                <input id="radio-gbp-converse" type="radio" name="radioRight" value="gbp">
+                                <label for="radio-gbp-converse">GBP</label>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <input type="text" class="input" id="rightInput">
+                            <p class="exchange-rates">1 <span id="baseRightCurrency">USD</span> = <span id="resRight">73.8896</span> <span id="symbolRightCurrency">RUB</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="converter.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
